@@ -1,0 +1,22 @@
+{
+  "name": "request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dharmesh-Poriya07/WebDev-Pepcoding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dharmesh-Poriya07/WebDev-Pepcoding/issues"
+  },
+  "homepage": "https://github.com/Dharmesh-Poriya07/WebDev-Pepcoding#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
