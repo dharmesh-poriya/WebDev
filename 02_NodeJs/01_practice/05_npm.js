@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+let chalk = require('chalk');
 let figlet = require("figlet");
 let str = 'Hemlo Guys!!!';
 
