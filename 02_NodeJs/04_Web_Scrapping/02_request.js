@@ -1,8 +1,10 @@
 // const fs = require('fs');
 // const path = require('path');
-const request = require('request');
-const cheerio = require('cheerio');
-// const chalk = require('chalk');
+// const request = require('request');
+// const cheerio = require('cheerio');
+import request from 'request';
+import cheerio from 'cheerio';
+import chalk from 'chalk';
 
 console.log("Before requesting");
 // requesting html from the url
@@ -34,8 +36,8 @@ function handleHtml(html){
     let totalCases = selectorTool(contentArr[0]).text();
     let totalDeaths = selectorTool(contentArr[1]).text();
     let totalRecovered = selectorTool(contentArr[2]).text();
-    // console.log(chalk.gray("Total Cases : "+totalCases));
-    // console.log(chalk.red("Total Deaths : "+totalDeaths));
-    // console.log(chalk.green("Total Recovered : "+totalRecovered));
+    console.log(chalk.gray("Total Cases : "+totalCases));
+    console.log(chalk.red("Total Deaths : "+totalDeaths));
+    console.log(chalk.green("Total Recovered : "+totalRecovered));
 
 }
