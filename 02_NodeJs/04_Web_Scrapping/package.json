@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1"
+    "chalk": "^5.0.1",
+    "cheerio": "^1.0.0-rc.11"
   },
-  "devDependencies": {},
   "description": ""
 }
