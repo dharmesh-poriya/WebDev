@@ -1,6 +1,7 @@
 import request from 'request';
 import cheerio from 'cheerio';
 import chalk from 'chalk';
+import {processScorecard} from './scorecard.js';
 
 // get all match links
 export function getAllMatchLinks(fullLink){
@@ -19,5 +20,8 @@ function extractMatchLinks(html){
         // console.log("A scoreboard links :- ",$(scoreBoardElement[i]).find('a').attr('href'));
         scoreBoardLinks.push('https://www.espncricinfo.com'+$(scoreBoardElement[i]).find('a').attr('href'));
     }
-    console.log("Scoreboard links :- ",scoreBoardLinks);
+    // console.log("Scoreboard links :- ",scoreBoardLinks);
+    for(let i=0;i<scoreBoardLinks.length;i++){
+        processScorecard(scoreBoardLinks[i]);
+    }
 }

@@ -5,7 +5,9 @@ import chalk from 'chalk';
 const url = 'https://www.espncricinfo.com/series/ipl-2021-1249214/chennai-super-kings-vs-royal-challengers-bangalore-19th-match-1254076/full-scorecard';
 
 // requesting
-request(url,callBack);
+export function processScorecard(url){
+    request(url,callBack);
+}
 
 function callBack(error,response,html){
     if(error){
@@ -34,7 +36,7 @@ function extractMatchDetailsHtml(html){
 
     let descArr = descElement.split(',');
     let matchNo = descArr[0].split(' ')[0].trim().slice(0,-2);
-    let dayOrNight = descArr[0].split(' ')[2].trim();
+    let dayOrNight = descArr[0].split(' ')[2];
     let venue = descArr[1].trim();
     let date = descArr[2].trim();
     console.log(matchNo,dayOrNight,venue,date,result);
@@ -51,7 +53,7 @@ function extractMatchDetailsHtml(html){
         let opponentIndex = 0==i?1:0;
         let opponentTeamName = $(innings[opponentIndex]).find('.ds-flex.ds-items-center.ds-cursor-pointer.ds-px-4>.ds-grow>.ds-py-3>span').text();
         opponentTeamName = opponentTeamName.split('INNINGS')[0].trim();
-        // console.log(chalk.yellow(teamName),chalk.green('vs'),chalk.red(opponentTeamName));
+        console.log(chalk.yellow(teamName),chalk.green('vs'),chalk.red(opponentTeamName));
 
         // finding batting and bowling innings
         let oneInnings = $(innings[i]).find('.ReactCollapse--collapse>.ReactCollapse--content>table>tbody');
@@ -96,6 +98,7 @@ function extractMatchDetailsHtml(html){
                 console.log(chalk.yellow(bowlerName),chalk.green(overs),chalk.red(maiden),chalk.blue(runs),chalk.magenta(wickets),chalk.cyan(economy),chalk.green(zeros),chalk.red(fours),chalk.blue(sixes),chalk.magenta(wide),chalk.cyan(noBall));
             }
         }
-        console.log('-----------------------------------------------');
+        console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++++');
     }
+    console.log('==============================================================');
 }
