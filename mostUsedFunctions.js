@@ -1,4 +1,11 @@
+// remove others characters from string except alphabets and space
+str.replace(/[^a-zA-Z ]/g, "")
+
+
 // creating new directory
+// if use ES module then add this two line for using __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 function makeNewDirectory(dirname){
     if(!fs.existsSync(dirname)){
         fs.mkdirSync(dirname);
@@ -23,3 +30,4 @@ function readExcelFile(filepath,sheetname){
     let data = xlsx.utils.sheet_to_json(sheetData);
     return data;
 }
+
