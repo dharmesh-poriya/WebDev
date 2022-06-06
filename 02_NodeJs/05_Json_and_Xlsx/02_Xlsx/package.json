@@ -1,0 +1,16 @@
+{
+  "name": "02_xlsx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01_writing_excelfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json": "^11.0.0",
+    "xlsx": "^0.18.5"
+  }
+}
