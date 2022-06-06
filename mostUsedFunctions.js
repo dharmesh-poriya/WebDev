@@ -1,3 +1,11 @@
+// impoerting modules
+import request from 'request';
+import cheerio from 'cheerio';
+import chalk from 'chalk';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 // remove others characters from string except alphabets and space
 str.replace(/[^a-zA-Z ]/g, "")
 
