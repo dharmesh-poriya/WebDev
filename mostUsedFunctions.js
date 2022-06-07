@@ -43,3 +43,7 @@ function readExcelFile(filepath,sheetname){
 import urlExist from 'url-exist';
 const exists = await urlExist('https://google.com');
 console.log(exists);
+
+// json to pdf file
+// reference :- 
+// https://stackabuse.com/generating-pdf-files-in-node-js-with-pdfkit/
