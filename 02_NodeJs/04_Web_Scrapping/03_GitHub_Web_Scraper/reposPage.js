@@ -31,11 +31,12 @@ function extractReposHtml(html){
     // console.log(chalk.yellow(mainTopicName));
     for(let i=0;i<topicsArr.length;i++){
         let linksHtml = $(topicsArr[i]).find('div.px-3>div.d-flex.flex-justify-between.my-3>div.d-flex.flex-auto>h3>a');
-
+        let userName = $(linksHtml[0]).text().trim();
+        let userGithubAccountLink = 'https://github.com'+$(linksHtml[0]).attr('href');
         let reposLink = 'https://github.com'+$(linksHtml[1]).attr('href');
         let reposName = $(linksHtml[1]).text().trim();
         // console.log(chalk.green("reposLinks :- ",reposLink),chalk.red("reposName :- ",reposName));
 
-        reposIssuesPage(reposLink,reposName,mainTopicName);
+        reposIssuesPage(userName,userGithubAccountLink,reposLink,reposName,mainTopicName);
     }
 }

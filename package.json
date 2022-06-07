@@ -21,8 +21,8 @@
     "chalk": "^5.0.1",
     "cheerio": "^1.0.0-rc.11",
     "figlet": "^1.5.2",
+    "pdfkit": "^0.13.0",
     "request": "^2.88.2"
   },
-  "keywords": [],
-  "devDependencies": {}
+  "keywords": []
 }

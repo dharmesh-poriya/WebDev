@@ -13,6 +13,7 @@
     "chalk": "^5.0.1",
     "cheerio": "^1.0.0-rc.11",
     "json": "^11.0.0",
+    "pdfkit": "^0.13.0",
     "xlsx": "^0.18.5"
   },
   "description": ""
