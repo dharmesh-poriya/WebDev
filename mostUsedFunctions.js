@@ -39,3 +39,7 @@ function readExcelFile(filepath,sheetname){
     return data;
 }
 
+// given URL exist or not
+import urlExist from 'url-exist';
+const exists = await urlExist('https://google.com');
+console.log(exists);
