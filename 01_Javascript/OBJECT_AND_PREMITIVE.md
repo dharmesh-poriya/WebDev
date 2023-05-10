@@ -1,3 +1,13 @@
+# Everything is Object in Javascript
+
+---
+
+- Everything is object in Javascript except for the primitive data types.
+- Primitive data types are: `string`, `number`, `boolean`, `null`, `undefined`, `symbol`.
+- Everything else is object in Javascript.
+- Objects are the core of Javascript.
+
+```js
 // in javascript everything is an object
 // array is an object
 let arr = [1,2,3,4,5];
@@ -43,3 +53,6 @@ console.log(fn);
 fn[2] = 30;
 console.log(fn);
 
+```
+
+![reference](./assets/execution_context/04_object_reference.avif)
