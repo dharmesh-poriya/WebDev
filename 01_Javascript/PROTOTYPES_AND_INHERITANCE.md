@@ -14,7 +14,7 @@
 
 ### Example
 
-    ```javascript
+```javascript
     // Object literal
     var person = {
         firstName: "John",
@@ -59,7 +59,7 @@
     console.log(me.__proto__); // Object {}
     console.log(me.__proto__ === person); // true
     console.log(me.__proto__.__proto__); // null
-    ```
+```
 
 ---
 
@@ -71,33 +71,29 @@
 - In Javascript, every object has a prototype
 
 ### Example :
-    ```javascript
-    var person1 = {
-        firstName: "John",
-        lastName: "Doe",
-        age: 50,
-        fullName: function() {
-            return this.firstName + " " + this.lastName;
-        }
-    };
-
-    var person2 = {
-        firstName: "Mary",
-        lastName: "Doe",
-    };
-
-    console.log(person2.__proto__)
-
-    person2.__proto__ = person1;
-    console.log(person2.firstName); // Mary
-    console.log(person2.lastName); // Doe
-    console.log(person2.age); // 50
-    console.log(person2.fullName()); // Mary Doe
-
-    console.log(person2) // { firstName: 'Mary', lastName: 'Doe' }
-    console.log(person2.__proto__) // { firstName: 'John', lastName: 'Doe', age: 50, fullName: [Function: fullName] }
-    console.log(person2.__proto__.__proto__) // {}
-    ```
+```javascript
+var person1 = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+var person2 = {
+    firstName: "Mary",
+    lastName: "Doe",
+};
+console.log(person2.__proto__)
+person2.__proto__ = person1;
+console.log(person2.firstName); // Mary
+console.log(person2.lastName); // Doe
+console.log(person2.age); // 50
+console.log(person2.fullName()); // Mary Doe
+console.log(person2) // { firstName: 'Mary', lastName: 'Doe' }
+console.log(person2.__proto__) // { firstName: 'John', lastName: 'Doe', age: 50, fullName: [Function: fullName] }
+console.log(person2.__proto__.__proto__) // {}
+```
 
 ---
 
