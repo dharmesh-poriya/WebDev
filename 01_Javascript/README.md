@@ -10,3 +10,4 @@
 ### # [Different types of functions](./TYPES_OF_FUNCTION.md)
 ### # [Closures in Javascript](./CLOSURES.md)
 ### # [This keyword](./THIS_KEYWORD.md)
+### # [Call, Apply and Bind in Javascript](./CALL_APPLY_AND_BIND.md)
