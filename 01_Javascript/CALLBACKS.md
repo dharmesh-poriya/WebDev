@@ -113,6 +113,6 @@
 
 ### Visualizing callback
 
-![Visualizing callback](./assets/async_js/04_callback.gif)
+<!-- ![Visualizing callback](./assets/async_js/04_callback.gif) -->
 
 ![Visualizing callback](./assets/async_js/04_01_callback.gif)
