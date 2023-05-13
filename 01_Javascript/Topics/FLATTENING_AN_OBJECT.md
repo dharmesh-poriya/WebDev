@@ -54,12 +54,22 @@
         'name' : 'Dharmesh Poriya',
         'role' : 'SDE',
         'address' : {
-            'city' : 'surat',
+            'city' : 'Surat',
             'state' : 'Gujarat',
-            'country' : 'india'
+            'country' : 'India'
         }
     }
         
     let ans = flattenObject(person);
     console.log(ans)
     ```
+    - Output:
+        ```javascript
+        {
+            name: 'Dharmesh Poriya',
+            role: 'SDE',
+            address_city: 'Surat',
+            address_state: 'Gujarat',
+            address_country: 'India'
+        }
+        ```
