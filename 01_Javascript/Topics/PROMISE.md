@@ -258,5 +258,13 @@
 
     f1read.then(cb1).then(cb2).then(cb3).catch((err) => console.log('Error: ' + err));
     ```
+    Output:
+    ```
+    Hello from f1.txt
+    Hello from f2.txt
+    Hello from f3.txt
+    ```
+
+---
 
 
