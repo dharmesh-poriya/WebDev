@@ -282,5 +282,20 @@
 - Callbacks are not easy to test but Promises are easy to test.
 - Callbacks are not easy to read but Promises are easy to read.
 
+---
 
+## Interview Questions
+
+### # Implement a promise which is work like set timeout, we are passing the time delay and message, task is to print message after delay time.(without using set timeout directly, you can use it inside promise)
+- code :
+    ```javascript
+    function delay(ms, message) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(message);
+            }, ms);
+        });
+    }
+    delay(3000,'Hello World!!').then((message) => console.log(`runs after 3 seconds ${message}`));
+    ```
 
