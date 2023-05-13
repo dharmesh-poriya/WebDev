@@ -26,3 +26,33 @@ newFunction(); // 11
 #### i.e
 
 ![basic example](./assets/closures/01_simple_example.gif)
+
+---
+
+### # make variable private using closure
+- In Javascript, we can make a variable private by creating it inside a function. And we can access that variable by creating a function inside that function.
+
+- code :
+    ```javascript
+    let myFunction = (function (){
+        let name = '' // private
+        
+        getName = function(){
+            return name;
+        }
+        
+        setName = function(newName){
+            name = newName;
+        }
+        
+        return {
+            getName,
+            setName
+        }
+    })();
+
+    myFunction.setName('Dharmesh');
+
+    console.log(myFunction.getName()); // Dharmesh
+    console.log(myFunction.name); // undefined
+    ```
