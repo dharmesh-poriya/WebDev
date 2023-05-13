@@ -7,6 +7,7 @@
 ### # [Execution Context](./Topics/EXECUTION_CONTEXT.md)
 ### # [Object and Primitive](./Topics/OBJECT_AND_PREMITIVE.md)
 ### # [Var, Let and Const keywords and hoisting](./Topics/VAR_LET_CONST.md)
+### # [Comparator operator and truthy falsy values](./Topics/COMPARISON_OPERATOR_AND_TRUTHY_FALSY_VALUES.md)
 
 ### Functions and Closures
 - ### # [Different types of functions](./Topics/TYPES_OF_FUNCTION.md)

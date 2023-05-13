@@ -267,4 +267,20 @@
 
 ---
 
+## # Why Promises are better than callbacks?
+- Callbacks are not composable but Promises are composable.
+    - composable means, we can combine multiple promises together to form a chain of promises.
+- Callbacks are not chainable but Promises are chainable.
+- Callbacks are not cancellable but Promises are cancellable.
+- Callbacks are not lazy but Promises are lazy.
+- Callbacks are not parallel but Promises are parallel.
+- Callbacks are not intuitive but Promises are intuitive.
+- Callbacks are not easy to debug but Promises are easy to debug.
+- Callbacks are not easy to maintain but Promises are easy to maintain.
+- Callbacks are not easy to write but Promises are easy to write.
+- Callbacks are not easy to scale but Promises are easy to scale.
+- Callbacks are not easy to test but Promises are easy to test.
+- Callbacks are not easy to read but Promises are easy to read.
+
+
 
