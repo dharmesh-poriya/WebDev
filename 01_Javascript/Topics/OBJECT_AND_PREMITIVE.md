@@ -55,4 +55,4 @@ console.log(fn);
 
 ```
 
-![reference](./assets/execution_context/04_object_reference.avif)
+![reference](./../assets/execution_context/04_object_reference.avif)
