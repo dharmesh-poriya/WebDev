@@ -25,7 +25,7 @@ newFunction(); // 11
 
 #### i.e
 
-![basic example](./assets/closures/01_simple_example.gif)
+![basic example](./../assets/closures/01_simple_example.gif)
 
 ---
 
