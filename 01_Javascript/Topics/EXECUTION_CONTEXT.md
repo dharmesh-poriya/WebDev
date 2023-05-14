@@ -28,15 +28,15 @@
 
 - ### images
 
-    ![execution context](./assets/execution_context/00_exection_context.gif)
+    ![execution context](./../assets/execution_context/00_exection_context.gif)
 
 
-    ![execution context](./assets/execution_context/01_exection_context.gif)
+    ![execution context](./../assets/execution_context/01_exection_context.gif)
 
 
-    ![execution context](./assets/execution_context/02_global-execution-3.gif)
+    ![execution context](./../assets/execution_context/02_global-execution-3.gif)
 
 
-    ![execution context](./assets/execution_context/03_global_execution_context.png)
+    ![execution context](./../assets/execution_context/03_global_execution_context.png)
 
     
