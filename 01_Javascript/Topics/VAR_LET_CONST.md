@@ -89,7 +89,7 @@ const PI = 3.14159265359;
 - Function declarations have priority over variable declarations, but not over variable assignment.
 - Function declarations will override variable declarations but not variable assignment.
 
-![reference image](./assets/var_let_const_keyword/01_hoisting.gif)
+![reference image](./../assets/var_let_const_keyword/01_hoisting.gif)
 
 ---
 
